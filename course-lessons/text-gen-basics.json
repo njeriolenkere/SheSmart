@@ -1,0 +1,320 @@
+[
+    {
+        "id": 1,
+        "title": "Introduction to Text Generation",
+        "subLessons": [
+            {
+                "sequence": [
+                    {
+                        "type": "content",
+                        "data": {
+                            "title": "Lesson 1.1: What is Text Generation?",
+                            "paragraphs": [
+                                "Text Generation is a process in artificial intelligence where algorithms create human-like text based on specific input.",
+                                "It is used in various applications like chatbots, automated content creation, and more."
+                            ],
+                            "image": "assets/cat.gif"
+                        }
+                    },
+                    {
+                    
+                        "type": "challenge",
+                        "data": {
+                            "title": "Sample Code html",
+                        "paragraphs": [
+                            "Your task is to fix the broken HTML code below. Make sure that all tags are properly closed!"
+                        ],
+                        "challenge": "<p> Hello World <p>",
+                        "language": "html",
+                        "answer": "<p> Hello World </p>" 
+                    }
+                    },
+                    {
+                        "type": "challenge",
+                        "data": {
+                            "title": "Sample Code css",
+                            "paragraphs": ["Make the text turn red. add your code below "],
+                            "challenge": ".sample-text { \n  /* Write your CSS here */\n}",
+                            "answer": ".sample-text { color: red; }",
+                            "language": "css"
+                        }
+                    },
+                    
+                    {
+                        "type": "code",
+                        "data": {
+                            "title": "Python List Comprehension",
+                            "code": "# List comprehension to create a list of squares\nsquares = [x**2 for x in range(10)]\n\n# Print the list of squares\nprint(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]",
+                            "paragraphs": ["This is how you write Python code:"],
+                            "language": "python"
+                           
+                        }
+                    },
+                    {
+                        "type": "code",
+                        "data": {
+                            "title": "Palindrome Checker Exercise",
+                            "challenge":"def is_palindrome(s): \n s = s.lower() \n #Write your code here  \n # Expected: False/True",
+                            "paragraphs": ["Write a function to check if a string is a palindrome:"],
+                            "language": "python",
+                            "answer": "def is_palindrome(s):\n    return s == s[::-1]\n\nprint(is_palindrome('radar'))  # Expected: True\nprint(is_palindrome('hello'))  # Expected: False" 
+                        }
+                    },
+                    {
+                        "type": "drag-and-drop",
+                        "data": {
+                            "question": "Match the terms",
+                            "items": [
+                                { "id": 1, "text": "AI" },
+                                { "id": 2, "text": "Text Generation" }
+                            ],
+                            "targets": [
+                                { "id": 1, "label": "Artificial Intelligence" },
+                                { "id": 2, "label": "Generating Human-like Text" }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "code",
+                        "data": {
+                            "title": "Python List Comprehension",
+                            "code": "# List comprehension to create a list of squares\nsquares = [x**2 for x in range(10)]\n\n# Print the list of squares\nprint(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]",
+                            "paragraphs": ["This is how you write Python code:"],
+                            "language": "python"
+                        }
+                    },
+                    {
+                        "type": "quiz",
+                        "data": {
+                            "question": "1What is Text Generation?",
+                            "options": [
+                                "Text Creation",
+                                "Text Analysis",
+                                "Text Generation"
+                            ],
+                            "answer": 2
+                        }
+                    },
+                    {
+                        "type": "code",
+                        "data": {
+                            "title": "2Sample Code",
+                            "paragraphs": ["This is how you write css code:"],
+                            "code": "#output div {color: red; font-weight: bold;, div {border-style: solid;}",
+                            "language": "css"
+                        }
+                    },
+                    {
+                        "type": "quiz",
+                        "data": {
+                            "question": "2What is Text Generation?",
+                            "options": [
+                                "Text Creation",
+                                "Text Analysis",
+                                "Text Generation"
+                            ],
+                            "answer": 2
+                        }
+                    },
+                    {
+                        "type": "code",
+                        "data": {
+                            "title": "3Sample Code",
+                            "paragraphs": ["This is how you write html code:"],
+                            "code": "<h1>This is a heading</h1> \n <p>This is a paragraph.</p>",
+                            "language": "html"
+                        }
+                    },
+                    {
+                        "type": "quiz",
+                        "data": {
+                            "question": "3What is Text Generation?",
+                            "options": [
+                                "Text Creation",
+                                "Text Analysis",
+                                "Text Generation"
+                            ],
+                            "answer": 2
+                        }
+                    },
+                    {
+                        "type": "video",
+                        "data": {
+                            "url": {
+                                "mp4": "assets/aicooks.mp4",
+                                "webm": "assets/steps.webm",
+                                "ogv": "assets/steps.ogv"
+                            },
+                            "title": "Introduction to Text Generation"
+                        }
+                    },
+                    {
+                        "type": "drag-and-drop",
+                        "data": {
+                            "question": "Match the terms",
+                            "items": [
+                                { "id": 1, "text": "AI" },
+                                { "id": 2, "text": "Text Generation" }
+                            ],
+                            "targets": [
+                                { "id": 1, "label": "Artificial Intelligence" },
+                                { "id": 2, "label": "Generating Human-like Text" }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "iframe",
+                        "data": {
+                            "paragraphs": ["Watch the video \n answer the questions that follows"],
+                            "url": "https://www.youtube.com/embed/-nhXrZY44z4",
+                            "title": "Interactive Text Generation Tool"
+                        }
+                    },
+                    {
+                        "type": "iframe",
+                        "data": {
+                            "paragraphs": ["Enter this prompt in the ai chat:\n  Who are you?"],
+                            "url": "http://127.0.0.1:7860",
+                            "title": "Intro to Prompt Engineering"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Introduction to Text Generation",
+        "subLessons": [
+            {
+                "sequence": [
+                    {
+                        "type": "content",
+                        "data": {
+                            "title": "Lesson 1.1: What is Text Generation?",
+                            "paragraphs": [
+                                "Text Generation is a process in artificial intelligence where algorithms create human-like text based on specific input.",
+                                "It is used in various applications like chatbots, automated content creation, and more."
+                            ]
+                        }
+                    },
+                    {
+                        "type": "code",
+                        "data": {
+                            "title": "Python List Comprehension",
+                            "code": "# List comprehension to create a list of squares\nsquares = [x**2 for x in range(10)]\n\n# Print the list of squares\nprint(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]",
+                            "paragraphs": ["This is how you write Python code:"],
+                            "language": "python"
+                        }
+                    },
+                    {
+                        "type": "code",
+                        "data": {
+                            "title": "1Sample Code",
+                            "paragraphs": ["This is how you write js code:"],
+                            "code": "const message = \"Hello, world!\";\nconsole.log(message)",
+                            "language": "javascript"
+                        }
+                    },
+                    {
+                        "type": "quiz",
+                        "data": {
+                            "question": "1What is Text Generation?",
+                            "options": [
+                                "Text Creation",
+                                "Text Analysis",
+                                "Text Generation"
+                            ],
+                            "answer": 2
+                        }
+                    },
+                    {
+                        "type": "code",
+                        "data": {
+                            "title": "2Sample Code",
+                            "paragraphs": ["This is how you write css code:"],
+                            "code": "#output div {color: red; font-weight: bold;, div {border-style: solid;}",
+                            "language": "css"
+                        }
+                    },
+                    {
+                        "type": "quiz",
+                        "data": {
+                            "question": "2What is Text Generation?",
+                            "options": [
+                                "Text Creation",
+                                "Text Analysis",
+                                "Text Generation"
+                            ],
+                            "answer": 2
+                        }
+                    },
+                    {
+                        "type": "code",
+                        "data": {
+                            "title": "3Sample Code",
+                            "paragraphs": ["This is how you write html code:"],
+                            "code": "<h1>This is a heading</h1> \n<p>This is a paragraph.</p>",
+                            "language": "html"
+                        }
+                    },
+                    {
+                        "type": "quiz",
+                        "data": {
+                            "question": "3What is Text Generation?",
+                            "options": [
+                                "Text Creation",
+                                "Text Analysis",
+                                "Text Generation"
+                            ],
+                            "answer": 2
+                        }
+                    },
+                    {
+                        "type": "video",
+                        "data": {
+                            "url": {
+                                "mp4": "assets/aicooks.mp4",
+                                "webm": "assets/steps.webm",
+                                "ogv": "assets/steps.ogv"
+                            },
+                            "title": "Introduction to Text Generation"
+                        }
+                    },
+                    {
+                        "type": "drag-and-drop",
+                        "data": {
+                            "question": "Match the terms",
+                            "items": [
+                                { "id": 1, "text": "AI" },
+                                { "id": 2, "text": "Text Generation" }
+                            ],
+                            "targets": [
+                                { "id": 1, "label": "Artificial Intelligence" },
+                                { "id": 2, "label": "Generating Human-like Text" }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "iframe",
+                        "data": {
+                            "paragraphs": ["Watch the video \n answer the questions that follows"],
+                            "url": "https://www.youtube.com/embed/-nhXrZY44z4",
+                            "title": "Interactive Text Generation Tool"
+                        }
+                    },
+                    {
+                        "type": "iframe",
+                        "data": {
+                            "paragraphs": ["Enter this prompt in the ai chat:\n  Who are you?"],
+                            "url": "http://127.0.0.1:7860",
+                            "title": "Intro to Prompt Engineering"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
+
+
