@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="course-level-map.css">
+        <!-- Include CodeMirror CSS -->
+        <link rel="stylesheet" href="codemirror-5.65.17/lib/codemirror.css">
+        <link rel="stylesheet" href="codemirror-5.65.17/theme/material.css">
+        <script src="course-level-map.js"></script>
+    <title>Text Gen Learning Path</title>
+
+</head>
+<body id="course-level-body">
+    
+    <main id="course-level-main">
+        <div id="course-heading">
+            <h1>Text Generative</h1>
+            <p>Build a solid foundation in text generative tools.</p>
+            <p>9 Lessons</p>
+        </div>
+
+        <div id="level-map"></div>
+        <div id="lesson-content">
+
+            <h2 id="lesson-title"></h2>
+            <div id="lesson-text"></div>
+            <!-- New image container -->
+    <div id="lesson-image" style="display: none;"></div>
+
+            <div id="quiz-container">
+                <div id="quiz-options"></div>
+            </div>
+
+            <div id="code-editor-container">
+                <textarea id="code-editor"></textarea>
+                
+                <button id="run-btn" onclick="runCode()">Run Code</button>
+            </div>
+    
+            <div id="output-container">
+                <div id="output"></div>
+            </div>
+            
+            <div id="drag-and-drop-container" style="display: none;">
+                <div id="items-container"></div>
+                <div id="targets-container"></div>   
+            </div>
+
+            <button id="next-btn" onclick="nextEntry()">Next</button>
+            <div id="feedback-message"></div>
+        </div>
+        
+        <div id="scoreboard">
+            
+            <ul id="scoreboard-list"></ul>
+            
+        </div>
+        <!-- Add this to your HTML -->
+        
+        <canvas id="confetti-canvas"></canvas>
+            <!-- Popup that fades in and out -->
+        <div id="popup-message" class="popup-message">
+        <div class="popup-content">
+            <p id="popup-text"></p>
+        </div>
+        
+        <script>
+            // Function to get URL parameters (e.g., ?course=computer-basics)
+            function getUrlParameter(name) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(name);
+            }
+            
+            
+            // Get the course name from the URL parameter
+            const courseName = getUrlParameter('course') || 'default-course';
+            console.log('Course name from URL:', courseName); // Debug log
+        
+            // Define a mapping from course names to lesson file paths, 
+            //use any name to define object eg comps-name  should not be same as Id in html
+            const courseToLessonMap = {
+                'comps-basics': 'course-lessons/comps-basics.json',
+                'text-gen-basics': 'course-lessons/text-gen-basics.json'
+                // Add more course to lesson mappings as needed
+            };
+        
+            // Get the appropriate lesson file path
+            const lessonFile = courseToLessonMap[courseName] || 'course-lessons/default-lesson.json';
+            console.log('Lesson file to load:', lessonFile); // Debug log
+        
+            // Load the lesson data
+            if (lessonFile) {
+                loadLessonData(lessonFile)
+                    .then(() => {
+                        console.log('Lesson data loaded successfully.');
+                    })
+                    .catch((error) => {
+                        console.error('Error loading lesson data:', error);
+                    });
+            } else {
+                console.error('Lesson file not found');
+            }
+            // Get the category from the URL
+        const category = getUrlParameter('category');
+        
+        // Apply the category-specific class to the main element
+        const mainElement = document.getElementById('course-level-main');
+        if (category) {
+            mainElement.classList.add(category);  // Dynamically add the category class to the main element
+            console.log('Applied category class:', category);  // For debugging
+        } else {
+            console.error('Category not found in URL');
+        }
+        </script>
+        
+    </div>  
+    </main>
+        <!-- Include CodeMirror JS -->
+        <script src="codemirror-5.65.17/lib/codemirror.js"></script>
+        <script src="codemirror-5.65.17/mode/javascript/javascript.js"></script>
+        <script src="codemirror-5.65.17/mode/xml/xml.js"></script>
+        <script src="codemirror-5.65.17/mode/css/css.js"></script>
+        <script src="codemirror-5.65.17/mode/htmlmixed/htmlmixed.js"></script>
+        
+    <script src="confetti.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.22.0/full/pyodide.js"></script>
+</body>
+</html>

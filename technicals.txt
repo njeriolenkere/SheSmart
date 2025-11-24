@@ -1,0 +1,113 @@
+to run ollama with python
+python app.python
+
+ollama run llama3
+ollama serve
+ollama rm blablabal
+ollama list
+
+#error :  raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DEDF927040>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+#solution: use microsoft edge, upgrade gradio, run requirements.tx, re run server python app.python
+
+#ollama/llama is cpu intensive--close tabs thats not being used
+
+Accessing the API endpoint for llama3
+"http://localhost:11434/api/generate"
+ nodejs
+npm init -y
+npm install express body-parser
+
+django
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
+user: admin, pass: wakeup1234
+
+https://www.datacamp.com/tutorial/run-llama-3-locally?dc_referrer=https%3A%2F%2Fduckduckgo.com%2F
+
+#running js on visual code
+node test.js
+
+# CDN services 
+(like Cloudflare, AWS CloudFront, or Google Cloud CDN) offer easy integration and improved file delivery speed.
+
+#react
+npm install -g npm@latest
+npm install -g npm
+npm init
+npm install -g yarn
+yarn cache clean
+npx create-react-app learn-coding
+
+it was not east to create a react app because npm kept reacting
+npm error code ECONNRESET
+npm error errno ECONNRESET
+npm error network request to https://registry.npmjs.org/create-react-app failed, reason: Client network socket disconnected 
+before secure TLS connection was established
+To refactor the React code into reusable components, we will break down the application into smaller, more manageable parts. This will make the code more readable, easier to maintain, and reusable.
+
+npm cache verify 
+npm cache clean --force
+npm install -g npm
+npx create-react-app learn-coding-app
+
+  Local:            http://localhost:3000        
+  On Your Network:  http://192.168.0.112:3000
+1. Create the following components:
+
+    Header.js: Displays the application header.
+    ProgressBar.js: Manages the progress bar.
+    LessonContent.js: Handles displaying the lesson content.
+    Quiz.js: Manages the quiz functionality.
+    CodeEditor.js: Encapsulates the code editor functionality.
+    Chatbot.js: Handles the chatbot interface.
+    NavigationButtons.js: Manages navigation between lessons.
+    App.js: Orchestrates all the components.
+
+
+To address all issues (including breaking changes), run:  
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Success! Created learn-coding-app at C:\Users\Njeri\Desktop\TheComputerGirls\learn-coding-app
+Inside that directory, you can run several commands:      
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.     
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd learn-coding-app
+  npm start
+
+Happy hacking!
+
+.eslintignore.txt create this file to help with ignore
+# install npm install eslint eslint-plugin-react eslint-plugin-react-hooks --save-dev
+
+cannot find s´x module
+
+# 👇️  (Windows) delete node_modules and package-lock.json
+rd /s /q "node_modules"
+del package-lock.json
+del -f yarn.lock
+npm cache clean --force
+npm install react
+npm install @types/react
+
+when app is Successful but ui is blank solution
+app.js isnt rendering well, check it

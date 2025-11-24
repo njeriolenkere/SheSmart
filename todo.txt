@@ -1,0 +1,63 @@
+shesmart
+
+https://www.shecodes.io/workshops#features
+
+python error
+pythin isnt cleaning the user input before comparing it to the answer or it should compare is the user input and expected answer is same while ignoring whitespace, comments etc
+Incorrect! ❌ Expected: "def is_palindrome(s):return s == s[::-1] print(is_palindrome('radar')) print(is_palindrome('hello'))" but got: "def is_palindrome(s):return s == s[::-1] s = s.lower() print(is_palindrome('radar')) print(is_palindrome('hello'))"
+
+Motivate streak (1 day(prgress), progress goal(15 lessons = 10xp points)
+		feedback(1 streak mon..tue, wen, thurs, friday, sat, sun empty till u complete another lessons)
+Streak messages 7200 messages (eg Todays lessons will make you a code star if you start your streak now or you are halfway through the week
+
+enable lazy loading
+Cache your web page
+Use a Content Delivery Network (CDN
+add visceral reaction(movable objects eg videos etc
+add cookies
+
+Security
+Database
+achivements
+log in
+hearts systems
+Course Library, My Progress, start trial button humburgar menu with(account, help, log out)
+When you click on start trial(Try premium for free= full access to 100+ courses
+Continue with limited access (5 free leesons)-limit on ip address & email or hearts system
+
+geo location to adjust prices based on the persons location
+check if email is temp or acual email eg gmail, yahoo etc
+
+By default, anyone with access to your URL can modify the parameters (like ?course=text-gen-basics) and potentially access different lesson files if they know the file names or paths.
+
+Here are some important security tips:
+1. URL Manipulation
+
+    Problem: Anyone can manipulate the URL by changing the course parameter and potentially accessing unauthorized files.
+    Solution: Validate the incoming URL parameters on the server side, not just in JavaScript. Ensure that only valid course parameters lead to actual lesson files, and block access to other paths.
+    Example: You could have a server-side check that only allows valid courses to be loaded (based on a predefined list of available courses).
+
+2. Restrict File Access
+
+    Problem: If your .json files are publicly accessible on the server, someone could find out their paths and access them directly (even outside the course flow).
+    Solution: Serve the files through a secure API or server-side script rather than directly exposing them. This way, you can restrict access based on user authentication, authorization, or other criteria.
+
+3. Authentication and Authorization
+
+    Problem: Anyone with the link can access the lessons.
+    Solution: Implement user authentication (login) and authorization (user roles) to restrict access to certain courses or content. For example, only registered users or users who have paid for the course should be able to access certain lessons.
+
+4. Sanitize Inputs
+
+    Problem: If the URL parameters are used unsafely, they could expose your system to attacks like Cross-Site Scripting (XSS) or Code Injection.
+    Solution: Always sanitize and validate any user inputs (including URL parameters) to prevent malicious code from being executed. On the server side, validate the incoming course names to ensure they're valid before loading any files.
+
+5. Hide Lesson Paths (Optional)
+
+    Problem: If users can easily guess the file paths or see the filenames in the URL, it might expose unnecessary information.
+    Solution: Consider abstracting or obfuscating the lesson paths (e.g., using unique course IDs instead of filenames in the URL). The actual file paths could be hidden behind an API.
+
+6. HTTPS
+
+    Problem: If you're not using HTTPS, data could be intercepted or manipulated.
+    Solution: Ensure you're using HTTPS to encrypt the communication between the client and server, protecting user data and preventing man-in-the-middle attacks.

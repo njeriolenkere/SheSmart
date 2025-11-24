@@ -1,0 +1,17 @@
+# documentation to create models
+#https://github.com/b1ip/ollama_modelfile_template
+#from", "license", "template", "system", "adapter", "parameter", or "message"
+
+FROM  llama3
+
+#set the temp to 1 higher is more creative, lower is more coherent
+PARAMETER temperature 0.5
+
+#set Defines a custom system message to dictate the behavior of the chat assistant.
+SYSTEM """
+You are a code techer. Answer as Ai Tutor, the assistant only
+"""
+
+#create model on cmd..move to directory where modelfile is in cmd using cd then 
+#ollama create aiTutor -f ./Modelfile
+#ollama run aiTutor

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Add icon library -->
+      <!-- https://fontawesome.com/v4/get-started/ -->
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <span class="logo-name">SheSmart</span>
+        </div>
+        <div class="menu">
+          <a href="#" class="login-btn">Log In</a>
+        </div>    
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <span class="offer-text">30% OFF</span>
+            <p class="banner-p">Learn to code by solving problems with hands-on coding courses! 
+            <span class="highlight">Try SheSmart PRO today</span> </p>
+            <a href="pricing-page.html" class="try-free-btn">Try for FREE</a>
+        </div>
+    </section>
+
+    <main id="page-container">
+    <!-- Course Section -->
+    <section class="course-section">
+        <div class="div-side">
+            <h1>Learn by Doing</h1>
+            <p>Let your beautiful intelligence shine brighter in a world of Technology. Join a community of women learning their tech skills through hands-on lessons in coding, data science, and more. Start now and build a solid tech career.</p>
+            <a href="login.html" class="btn">Get Started</a>
+        </div>
+        <div class="image-container">
+            <img src="assets/women-coding.jpg" alt="women coding" class="women-coding-img">
+        </div>
+    </section>
+
+    <!-- Why Study Tech Section -->
+    <section class="why-study-tech">
+        <h2>Why Study Tech </h2>
+        <div class="why-study-tech-container">
+          <div class="reason">
+            <img src="assets/why-tech-popular.jpg" alt="why-tech-popular">
+            <p>Its Popular</p>
+        </div>
+        <div class="reason">
+          <img src="assets/why-tech-cash.jpg" alt="why-tech-cash">
+          <p>Good Pay</p>
+      </div>
+      <div class="reason">
+        <img src="assets/why-tech-flexible.jpg" alt="why-tech-flexible">
+        <p>Flexible Work</p>
+    </div>
+        </div>
+    </section>
+
+    <!-- Course Categories Section -->
+    <section class="course-categories">
+        <h2>Popular Courses</h2>
+        <div class="category-container">
+            <div class="category">Computer basics</div>
+            <div class="category">Internet basics</div>
+            <div class="category">HTML</div>
+            <div class="category">Python</div>
+            <div class="category">Artificail Inteligence</div>
+        </div>
+    </section>
+
+    <!-- Recommended Lessons Section -->
+    <section class="interactive-lessons">
+        <h2>Interactive Lessons - Top 3 Recommended for You</h2>
+        <div class="interactive-lessons-container">
+          <div class="lesson">
+            <img src="assets/reco-chatgpt.jpg" alt="ChatGPT bot">
+            <p>ChatGPT</p>
+        </div>
+        <div class="lesson">
+          <img src="assets/reco-computer-basics.jpg" alt="computer hardware">
+          <p>Computer Basics</p>
+      </div>
+      <div class="lesson">
+        <img src="assets/reco-suno ai.jpg" alt="woman dancing">
+        <p>Suno Ai</p>
+    </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section class="join-section">
+        <h1>Join 100,000+ women learning on SheSmart</h1>
+        <a href="login.html" class="btn">Get Started</a>
+    </section>
+
+    <!-- Help Section -->
+    <section class="help-section">
+        <h2>Help</h2>
+        <div class="help-item">
+            <p onclick="toggleAnswer('answer1')">How do I reset my password?</p>
+            <div id="answer1" class="answer">To reset your password, go to the profile page and click 'Reset Password'.</div>
+        </div>
+        
+        <div class="help-item">
+            <p onclick="toggleAnswer('answer2')">How do I contact support?</p>
+            <div id="answer2" class="answer">You can contact support via email at support@shesmart.com.</div>
+        </div>
+    </section>
+  </main>
+    <!-- Footer -->
+    <div class="pg-footer">
+        <footer class="footer">
+          <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">   
+            </path>
+          </svg>
+          <div class="footer-content">
+            
+              <div class="footer-content-column">
+                <div class="footer-menu">
+                  <h2 class="footer-menu-name"> Company</h2>
+                  <ul id="menu-company" class="footer-menu-list">
+                    <li class="menu-item ">
+                      <a href="#">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                <h2 class="footer-menu-name"> Get Started</h2>
+                <ul id="menu-get-started" class="footer-menu-list">
+                  <li class="menu-item ">
+                    <a href="#">Courses</a>
+                  </li>
+                  <li class="menu-item ">
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li class="menu-item ">
+                    <a href="#">Testimonials</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                <h2 class="footer-menu-name"> Legal</h2>
+                <ul id="menu-legal" class="footer-menu-list">
+                  <li class="menu-item ">
+                    <a href="#">Privacy Notice</a>
+                  </li>
+                  <li class="menu-item ">
+                    <a href="#">Terms of Use</a>
+                  </li>
+                  <li class="menu-item ">
+                    <a href="#">Cookie Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                <h2 class="footer-menu-name"> Socials</h2>
+                <ul id="footer-social-links" class="footer-menu-list">
+          
+            <a class="footer-social-link linkedin" href="#" target="_blank">
+              <li class="menu-item ">
+                <i class="fa fa-linkedin" ></i></li></a>
+            <a class="footer-social-link twitter" href="#" target="_blank" >
+              <li class="menu-item ">
+                <i class="fa fa-twitter"   ></i></li></a>
+            <a class="footer-social-link facebook" href="#" target="_blank">
+                <li class="menu-item ">
+                  <i class="fa fa-facebook" ></i></li></a>
+          </ul>
+        </div>
+        
+      </div>
+      
+    </div> 
+  
+        </footer>
+        <div class="footer-copyright">
+          <div class="footer-copyright-wrapper">
+            <p id="footer-logo" class="footer-copyright-text"> 
+              <a class="footer-copyright-link" href="#" target="_self"> SheSmart</a>
+            </p>
+          </div> 
+          <div class="footer-copyright-wrapper">
+            <p class="footer-copyright-text">
+              <a class="footer-copyright-link" href="#" target="_self"> Designed with ❤ by SheSmart </a>
+            </p>
+          </div> 
+
+          <div class="footer-copyright-wrapper">
+            <p class="footer-copyright-text">
+              <a class="footer-copyright-link" href="#" target="_self"> ©2025 SheSmart Inc</a>
+            </p>
+          </div> 
+        </div>
+    </div>
+     
+
+
+    <script src="index.js"></script>
+</body>
+</html>

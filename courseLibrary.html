@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="courseLibrary.css">
+        <script  src="courseLibrary.js"> </script>
+
+        
+        <title>Course Library</title>
+    </head>
+
+    <body>
+         <!-- Header -->
+        <header>
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo">
+                <span class="logo-name">SheSmart</span>
+            </div>
+            <div class="menu">
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+                <ul id="menu-items" class="menu-items">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+            
+        </header>
+         
+
+        <main id="page-container"> 
+            <h1> Course Library</h1>
+            <h2 class="headings"> Digital Systems</h2>
+            <div id="digitalsystems" class="digitalsystems-category"> 
+                <section id="computer-basics-cos" class="courses" > 
+                    <a href="course-level-map.html?course=comps-basics&category=digitalsystems">   
+                    <h2> Computer for Absolute beginners</h2> 
+                    <img src="assets/reco-computer-basics.jpg" alt="computer hardware"  class="courses-img">
+                    <p>Desktop and laptops are not the only computers in the world. Learn more. </p>
+                    <button class="digitalsystems-button"> Start Learning</button></a>
+                </section>
+                <section id="internet-cos" class="courses"> <a href="">
+                    <h2> What is internet?</h2> 
+                    <p>Internet course for absolute beginner. Learn how use to buy groceries or to get a date. </p>
+                    <button class="digitalsystems-button"> Start Learning</button></a>
+                </section>
+                <section id="surf-onPhone-cos"  class="courses"> <a href="">
+                    <h2> Use Mobile Phone to surf</h2> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="digitalsystems-button"> Start Learning</button></a>
+                </section>
+                <section id="surf-onComputer-cos"  class="courses"> <a href="">
+                    <h2> Use a Computer to surf</h2> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="digitalsystems-button"> Start Learning</button></a>
+                </section>
+            </div>
+
+            <h2 class="headings"> Generative Ai Tools</h2>
+            <div id="genai" >
+                <section id="text-gen-cos" class="courses" > 
+                    <a href="course-level-map.html?course=text-gen-basics&category=genai">
+                    <h2> Text Geneneration Intro</h2> 
+                    <p>Ever wanted to write a book but dint know how? Well text generators such as ChatGPT and llama can help you create a novel within seconds!</p>
+                    <button class="genai-cos-button"> Start Learning</button></a>
+                </section>  
+                <section id="music-gen-cos" class="courses" > <a href="">
+                    <h2> Music Gen</h2> 
+                    <p>Ever wanted to be a mega popstar like MJ? With a click of a button, you can produce your own music and share it to the world. Start learning this hands on course </p>
+                    <button class="genai-cos-button"> Start Learning</button></a>
+                </section>
+                <section id="voice-gen-cos" class="courses"> <a href="">
+                    <h2> Voice Gen</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="genai-cos-button"> Start Learning</button>
+                </section>
+                <section id="content-gen-cos" class="courses" > <a href="">
+                    <h2> Content Gen</h2> 
+                    <p> learn the many ways on how to create content using ai. </p>
+                    <button class="genai-cos-button"> Start Learning</button></a>
+                </section>
+                <section id="image-gen-cos"  class="courses"> <a href="">
+                    <h2>Image Gen</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="genai-cos-button"> Start Learning</button>
+                </section>
+                <section id="lag-translate-cos"  class="courses"> <a href="">
+                    <h2> Language translator</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="genai-cos-button"> Start Learning</button>
+                </section>
+                <section id="vid-gen-cos"  class="courses"> <a href="">
+                    <h2> Content Gen</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="genai-cos-button"> Start Learning</button>
+                </section>
+                <section id="code-gen-cos"  class="courses"> <a href="">
+                    <h2>Code Gen</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="genai-cos-button"> Start Learning</button>
+                </section>
+                <section id="ai-assistant-cos"  class="courses"> <a href="">
+                    <h2> Ai Assistant </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="genai-cos-button"> Start Learning</button>
+                </section>
+            </div>
+
+            <h2 class="headings"> Web Design and Programming</h2>
+            <div id="webdesign" class="webdesign-category"> 
+                <section id="design-cos"  class="courses"> <a href="">
+                    <h2> Web Design Theory</h2> </a>
+                    <p>Color makes your skin beautiful. Imagine if we did not have skin color how would we look?😱 Learn basics principals of designing beautiful website with color. </p>
+                    <button class="design-cos-button"> Start Learning</button>
+                </section>
+                <section id="html-cos" class="courses" > <a href="">
+                    <h2> HTML </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="design-cos-button"> Start Learning</button>
+                </section>
+                <section id="css-cos" class="courses"> <a href="">
+                    <h2> CSS </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="design-cos-button"> Start Learning</button>
+                </section>
+                <section id="js-cos" class="courses"> <a href="">
+                    <h2> JavaScript </h2> </a>
+                    <p> People may push your buttons the wrong way but in JavaScript pushing buttons adds interactivity to your websites such as animations, click and so much fun stuff.</p>
+                    <button class="design-cos-button"> Start Learning</button>
+                </section>
+                <section id="js-advanced-cos" class="courses"> <a href="">
+                    <h2> JavaScript Advanced</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="design-cos-button"> Start Learning</button>
+                </section>
+                <section id="react-cos" class="courses"> <a href="">
+                    <h2> React </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="design-cos-button"> Start Learning</button>
+                </section>
+                <section id="nodejs-cos" class="courses"> <a href="">
+                    <h2> Node js</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="design-cos-button"> Start Learning</button>
+                </section>
+            </div> 
+            <h2 class="headings"> Python Programming</h2>
+            <div id="python" class="python-category"> 
+                <section id="py-cos" class="courses"> <a href="python-cos.html">
+                    <h2> Python for absolute Beginner</h2> 
+                    <p>Python is not just a snake, it is also a fun programming languge that is used by big tech companies to create Computer Vision, Artificial Inteligence and more.</p>
+                    <button class="py-cos-button"> Start Learning</button> </a>
+                </section>
+                <section id="py-advance-cos" class="courses"> <a href="">
+                    <h2> Python Advanced</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="py-cos-button"> Start Learning</button>
+                </section>
+                <section id="py-applied-cos" class="courses"> <a href="">
+                    <h2> Applied Python </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="py-cos-button"> Start Learning</button>
+                </section>
+                <section id="matplot-cos" class="courses"> <a href="">
+                    <h2> Python Mathplotlib</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="py-cos-button"> Start Learning</button>
+                </section>
+                <section id="numpy-cos" class="courses"> <a href="">
+                    <h2> Python Numpy</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="py-cos-button"> Start Learning</button>
+                </section>
+                <section id="panda-cos" class="courses"> <a href="">
+                    <h2> Python Pandas</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="py-cos-button"> Start Learning</button>
+                </section>
+                <section id="mysql-cos" class="courses"> <a href="">
+                    <h2> Python MySQL</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="py-cos-button"> Start Learning</button>
+                </section>
+                <section id="app-cos" class="courses"> <a href="">
+                    <h2> Python Applications</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="py-cos-button"> Start Learning</button>
+                </section>
+            </div>
+            <h2 class="headings">Artificial Inteligence</h2>
+            <div id="ai" class="ai-category">
+                <section id="ai-cos" class="courses" > 
+                    <h2> Artificial Inteligence basics</h2>
+                    <img src="assets/ada.png" alt="ada ai"  class="courses-img">
+                    <p> Want to train your own chatbot? Articifial Inteligence is yo mommy. Come to mommy 🙋‍♀️</p>
+                    <button class="ai-cos-button"> Start Learning</button>
+                </section>
+                <section id="genai-intro-cos"  class="courses"> <a href="">
+                    <h2>Introduction to Generative Ai </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="ai-cos-button"> Start Learning</button>
+                </section> 
+                <section id="cv-cos" class="courses"> <a href="">
+                    <h2> Computer Vision</h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="ai-cos-button"> Start Learning</button>
+                </section>
+                <section id="ml-cos" class="courses"> <a href="">
+                    <h2> Machine Learning </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="ai-cos-button"> Start Learning</button>
+                </section>
+                <section id="nn-cos" class="courses"> <a href="">
+                    <h2> Neural Networks </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="ai-cos-button"> Start Learning</button>
+                </section>
+                <section id="lmms-cos" class="courses"> <a href="">
+                    <h2> Large Language Models </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="ai-cos-button"> Start Learning</button>
+                </section>
+                <section id="dl-cos" class="courses"> <a href="">
+                    <h2> Deep Learning </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="ai-cos-button"> Start Learning</button>
+                </section>
+                <section id="gai-cos" class="courses"> <a href="">
+                    <h2> Robotics for Everyone </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="ai-cos-button"> Start Learning</button>
+                </section>
+                <section id="da-cos" class="courses"> <a href="">
+                    <h2> Data Analysis </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="ai-cos-button"> Start Learning</button>
+                </section>
+                <section id="a-cos" class="courses"> <a href="">
+                    <h2> Introduction to Algorithms </h2> </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec magna nec urna iaculis sodales. Aliquam porttitor sapien sed ligula interdum, ut vehicula felis iaculis. </p>
+                    <button class="ai-cos-button"> Start Learning</button>
+                </section>
+            </div>
+        </main>
+    </body> 
+    
+    <div class="footer-copyright">
+        <div class="footer-copyright-wrapper">
+          <p class="footer-copyright-text">
+            <a class="footer-copyright-link" href="#" target="_self"> Designed with ❤ by SheSmart | ©2024, All rights reserved. </a>
+          </p>
+        </div>
+      </div>
+</html>

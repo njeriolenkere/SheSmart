@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Default to column layout for small screens */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Styling for Progress Container */
+#progressContainer {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#progressBar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+}
+
+/* Styling for Lesson Container */
+#lessonContainer {
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1; /* Allow it to grow and take available space */
+    overflow: auto; /* Handle overflow for large content */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Buttons styling */
+#navButtons {
+    display: flex;
+    justify-content: center; /* Center the button by default */
+    margin-top: 10px; /* Add margin to avoid overlap */
+    width: 100%; /* Full width for responsive alignment */
+    box-sizing: border-box; /* Ensure padding/margin calculations include borders */
+}
+
+.nav-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+    display: inline-block;
+}
+
+.nav-button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for Editor and Chatbot Section */
+.editor-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack editor elements vertically */
+    flex: 1; /* Allow it to grow and take available space */
+    overflow: auto; /* Handle overflow for large content */
+}
+
+/* CodeMirror Editor styling */
+textarea#codeEditor {
+    width: 100%; /* Full width of the editor-section */
+    height: 200px; /* Adjust height as needed */
+    box-sizing: border-box;
+}
+
+/* Button container for editor actions */
+#editorButtons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+/* Editor buttons styling */
+.editor-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-right: 5px; 
+}
+#clearCode {
+    background-color:#cc0000;
+}
+#clearCode:hover {
+    background-color:#e24343;
+}
+
+
+.editor-button:hover {
+    background-color: #45a049;
+}
+
+/* Output frame styling */
+iframe#outputFrame {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+.chatbot-text{
+    font-size: 12px;
+}
+/* Chatbot Popup styling */
+.chatbot-popup {
+    position: fixed;
+    bottom: 10px; /* Fixed at the bottom of the viewport */
+    right: 10px; /* Fixed to the right of the viewport */
+    width: 300px; /* Width of the chatbot popup */
+    height: 600px; /* Height of the chatbot popup */
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it is above other content */
+    display: none; /* Hidden by default */
+}
+
+.close-chatbot {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-chatbot:hover {
+    background-color: #cc0000;
+}
+
+/* Styles for the "Copy Code" button */
+.copy-code-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.copy-code-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive layout adjustments */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row; /* Align children side by side for larger screens */
+        gap: 20px; /* Space between lesson and editor sections */
+    }
+
+    #lessonContainer {
+        width: 70%; /* Adjust width for larger screens */
+        padding: 20px;
+        margin-right: 20px; /* Space between lesson and editor */
+    }
+
+    .editor-section {
+        width: 30%; /* Adjust width for larger screens */
+    }
+
+    #navButtons {
+        position: absolute; /* Position it relative to the main container */
+        bottom: 20px; /* Space from the bottom */
+        left: 20%; /* Space from the left */
+        bottom: 100px;
+        justify-content: flex-start; /* Align buttons to the left */
+        width: auto; /* Adjust width as needed */
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        flex-direction: column; /* Stack children vertically for smaller screens */
+    }
+
+    #navButtons {
+        position: relative; /* Ensure correct positioning */
+        justify-content: center; /* Center the button */
+        margin: 10px 0; /* Margin to separate from content */
+        text-align: center; /* Center align text in buttons */
+    }
+
+    #navButtons .nav-button {
+        display: block; /* Stack navigation buttons vertically */
+        margin: 10px auto; /* Center the button and add margin */
+        width: 90%; /* Adjust width to fit content */
+    }
+}
+
+/* Floating action button for Chatbot Toggle */
+#toggleChatbot {
+    position: fixed; /* Fixed position for floating effect */
+    bottom: 20px; /* Space from the bottom of the viewport */
+    right: 20px; /* Space from the right of the viewport */
+    background-color: #4CAF50; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 50%; /* Round button */
+    width: 60px; /* Size of the button */
+    height: 60px; /* Size of the button */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    font-size: 24px; /* Font size for icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for floating effect */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000; /* Ensure button is above other content */
+}
+
+#toggleChatbot:hover {
+    background-color: #45a049;
+}
+
+/* styles.css */
+#dragDropContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.draggable, .drop-target {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.draggable {
+    cursor: move;
+}
+
+.drop-target {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e9e9;
+}
+
+.drag-over {
+    border-color: #00f;
+    background-color: #d0d0ff;
+}
+/* styles.css */
+.drag-over {
+    border-color: #00f;
+    background-color: #d0d0ff;
+}
+
+.correct {
+    border-color: #0f0;
+    background-color: #d0ffd0;
+}
+
+.incorrect {
+    border-color: #f00;
+    background-color: #ffd0d0;
+}
+
+

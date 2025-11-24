@@ -1,0 +1,376 @@
+/* course-level-main - colors: pinkish - #ffc0cbff; bg2 #fffafaff;
+yellowish - #ff8d23ff; green - #29cc57ff; blue - #456dffff; grey, */
+
+#course-level-body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1.5rem;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+  justify-content: center; 
+  background-color: #faebd7ff
+  
+}
+/* Default styles for the main element */
+#course-level-main{
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fffafaff;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.digitalsystems{border-top: 1rem solid #ff4081ff;}
+.genai {border-top: 1rem solid #ff8d23ff;}
+.webdesign {border-top: 1rem solid#29cc57ff ;}
+.python {border-top: 1rem solid #456dffff;}
+.ai {border-top: 1rem solid #ff4081ff;}
+
+
+p {font-size: 16px;}
+a{color: #000; text-decoration: none;}
+
+/* Main container #fffafaff; */
+
+
+/* Level map styles */
+/* Container for levels */
+#level-map {
+  display: flex;
+  flex-wrap: wrap; /* Allow levels to wrap onto multiple lines */
+  gap: 15px; /* Space between levels */
+  justify-content: center; /* Center levels horizontally */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* General level styles */
+.level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* Fixed width for uniformity */
+  height: 150px; /* Fixed height for uniformity */
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer; /* Default cursor for clickable levels */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Completed level styles */
+.level.completed {
+  background-color: #d4edda; /* Light green background for completed levels */
+  border-color: hsl(134, 41%, 83%); /* Darker green border for completed levels */
+  color: #000;
+  background-color: #29cc57ff; /* Dark green text color */
+}
+
+/* Active level styles */
+.level.active {
+  background-color: #e2e3e5; /* Gray background for the active level */
+  border-color: #b8b9b9; /* Darker gray border for the active level */
+}
+
+/* Inactive level styles */
+.level.inactive {
+  background-color: #f8f9fa; /* Light gray background for inactive levels */
+  border-color: #e2e3e5; /* Light gray border for inactive levels */
+  color: #6c757d; /* Gray text color */
+  cursor: not-allowed; /* Cursor indicating the level is not clickable */
+}
+
+/* Add hover effect for levels */
+.level:hover:not(.inactive) {
+  transform: scale(1.05); /* Slightly enlarge level on hover */
+}
+
+/* Add a distinctive icon for the current active level */
+.current-level-icon {
+  font-size: 24px;
+  color: #ff4081ff; /* Red color for emphasis */
+}
+
+/* Lesson content styles */
+#lesson-content {
+  margin-top: 20px;
+  z-index: 1; /* Ensure lesson content is below confetti and scoreboard */
+
+}
+
+#lesson-title {
+  font-size: 24px;
+  color: #333;
+}
+
+#lesson-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+#quiz-container {
+  margin-top: 20px;
+}
+
+#quiz-options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #456dffff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#quiz-options button:hover {
+  background-color: #0037fd;
+}
+
+#quiz-options button:active {
+  background-color: #456dffff;
+}
+
+/* Feedback message styles */
+#feedback-message {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #d32f2f;
+}
+
+/* Scoreboard styles */
+#scoreboard {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+
+/* Scoreboard content styling */
+.scoreboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#scoreboard {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#scoreboard img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+#scoreboard .completed-message {
+  font-size: 24px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+#scoreboard .points-label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#scoreboard .total-points {
+  font-size: 36px;
+  color: #456dffff;
+  margin-bottom: 20px;
+}
+
+/* Confetti canvas styling */
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 500; /* Ensure confetti is above the scoreboard */
+  display: none; /* Initially hidden */
+}
+
+/* Buttons */
+
+#next-btn{
+   background-color:  #29cc57ff;
+   
+}
+#next-btn:hover{
+    background-color:  #008f29;
+    color:#000;
+ }
+
+#run-btn, #next-btn, #continue-btn{
+  padding: 10px 20px;
+  border: none;
+  color:#fffafaff; font-weight: bold;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+#run-btn{
+    background-color: #ff4081;
+    color:#fffafaff; font-weight: bold;
+}
+
+#run-btn:hover {
+  background-color: #e91e63ff;
+  color:#000;
+}
+
+#run-btn:active {
+  background-color: #ff4081;
+}
+
+#continue-btn {
+  background-color: #000;
+  color:#fffafaff; font-weight: bold;
+}
+
+#continue-btn:hover {
+  background-color: #ff4081;
+  color:#000;
+}
+
+#continue-btn:active {
+  background-color: #456dffff;
+  color:#fffafaff; font-weight: bold;
+}
+#pointsLabel{
+  color: #008f29;
+  font-size: 30px;
+}
+#lessonCompleteMessage{ 
+  font-size: 40px; 
+  line-height: 2.5rem;
+  padding: 1rem 3rem;}
+
+#totalScore {font-size: 30px;}
+#trophyImage{
+  width: 50%;
+  height: auto; }
+
+/* message pop up zoom in and out*/
+
+.popup-message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fffafaff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: zoomInOut 3s ease-out forwards;
+}
+.animate-message {
+  animation: zoomInOut 3s ease-out forwards;
+}
+@keyframes zoomInOut {
+  0% {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+  }
+  50% {
+      transform: translate(-50%, -50%) scale(1.1);
+      opacity: 1;
+  }
+  100% {
+      transform: translate(-50%, -60%) scale(0.5);
+      opacity: 0;
+  }
+}
+
+.popup-message p {
+  margin: 0;
+}
+
+.drop-zone {
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #e8e8e8;
+  border: 2px dashed #aaa;
+  text-align: center;
+  min-height: 50px;
+}
+
+#drag-and-drop-container {
+  display: none;
+  margin-top: 20px;
+}
+
+.draggable-item {
+  padding: 10px;
+  background-color: #d9edf7;
+  border: 1px solid #bce8f1;
+  margin-bottom: 10px;
+  cursor: move;
+}
+
+.droppable-target {
+  padding: 20px;
+  background-color: #f2dede;
+  border: 2px dashed #ebccd1;
+  margin-bottom: 10px;
+}
+
+.level {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+}
+
+/* Additional CSS for code editor */
+.CodeMirror { height: auto; } /* Make CodeMirror height adjust to its content */
+#lesson-content { display: none; }
+#code-editor-container, #output-container {
+   display: none; 
+   max-width: 100%;
+   min-height: 150px; /* Adjust as needed */
+   max-height: 400px; /* Adjust as needed */
+   overflow: auto; /* Allow scrolling if content exceeds max height */}
+#output-container { margin-top: 20px; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; }
+
+#output {
+  max-height: 150px; /* Adjust as needed */
+  overflow-y: auto; /* Allow scrolling if content exceeds max height */
+}
+
+
+/* Responsive layout --when the width gets larger mobile fast*/
+@media screen and (max-width: 992px) {
+  #digitalsystems:not(.headings), #webdesign, #python, #ai, #genai{
+     grid-template-columns: repeat(2, 1fr);
+  } 
+}
+@media screen and (max-width: 600px) {
+  #digitalsystems:not(.headings), #webdesign, #python, #ai,#genai{
+     grid-template-columns: repeat(1, 1fr);
+  } 
+}

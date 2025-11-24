@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdnjs.cloudflare.com; style-src 'self' cdnjs.cloudflare.com; frame-src 'self' http://127.0.0.1:7860;">
+    <title>Learn HTML</title>
+    <link rel="stylesheet" href="codemirror-5.65.17/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror-5.65.17/theme/material.css">
+
+    <link rel="stylesheet" href="python-cos.css"> 
+</head>
+<body>
+    <header>
+        <h1>Learn Python</h1>
+    </header>
+    
+    <main>
+        <!-- Progress Bar -->
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+
+        <!-- Lesson Container with Slide Animation -->
+        <section id="lessonContainer">
+            <!-- Lessons will be loaded here dynamically -->
+            <div id="dragDropContainer">
+                <div class="draggable" draggable="true" data-id="1">AI</div>
+                <div class="draggable" draggable="true" data-id="2">Text Generation</div>
+                <div class="drop-target" data-id="1">Artificial Intelligence</div>
+                <div class="drop-target" data-id="2">Generating Human-like Text</div>
+            </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div id="navButtons">
+            <button id="nextButton" class="nav-button">Next</button>
+        </div>
+
+        
+
+        <!-- Editor and Chatbot Section -->
+        <section class="editor-section">
+            <textarea id="codeEditor" placeholder="Write your code here..."></textarea>
+            <div id="editorButtons">
+                <button id="runCode" class="editor-button">Run Code</button>
+                <button id="clearCode" class="editor-button">Clear</button>
+            </div>
+            <iframe id="outputFrame" srcdoc="Your results will be displayed here..."></iframe>
+
+            <!-- Chatbot Toggle -->
+            <button id="toggleChatbot" class="toggle-chatbot"> <p class="chatbot-text">Ask Ada Ai buddy</p></button>
+            <section class="chatbot-popup" id="chatbotPopup">
+                <button id="closeChatbot" class="close-chatbot">&times;</button>
+                <iframe id="chatbotFrame" src="http://127.0.0.1:7860" width="300px" height="600px" frameborder="0"></iframe>
+            </section>
+        </section>
+    </main>
+
+    <!-- Include CodeMirror JS -->
+    <script src="codemirror-5.65.17/lib/codemirror.js"></script>
+    <script src="codemirror-5.65.17/mode/xml/xml.js"></script>
+    <script src="codemirror-5.65.17/mode/javascript/javascript.js"></script>
+    <script src="codemirror-5.65.17/mode/css/css.js"></script>
+    <script src="codemirror-5.65.17/mode/htmlmixed/htmlmixed.js"></script>
+    
+    <script src="python-cos.js"></script>
+</body>
+</html>
